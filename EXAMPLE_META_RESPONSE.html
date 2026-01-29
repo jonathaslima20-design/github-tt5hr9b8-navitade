@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon dinâmico baseado no avatar do corretor -->
+    <link rel="icon" type="image/png" href="https://exemplo.supabase.co/storage/v1/object/public/avatars/kingstore-avatar.png" />
+    <link rel="apple-touch-icon" href="https://exemplo.supabase.co/storage/v1/object/public/avatars/kingstore-avatar.png" />
+
+    <!-- Primary Meta Tags -->
+    <title>King Store - VitrineTurbo</title>
+    <meta name="title" content="King Store - VitrineTurbo" />
+    <meta name="description" content="Confira os melhores produtos esportivos e casual da King Store. Nike, Adidas, Puma e muito mais!" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://vitrineturbo.com/kingstore" />
+    <meta property="og:title" content="King Store - VitrineTurbo" />
+    <meta property="og:description" content="Confira os melhores produtos esportivos e casual da King Store. Nike, Adidas, Puma e muito mais!" />
+
+    <!-- IMPORTANTE: Esta é a imagem que aparecerá nas prévias do WhatsApp/Facebook -->
+    <meta property="og:image" content="https://exemplo.supabase.co/storage/v1/object/public/avatars/kingstore-avatar.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="VitrineTurbo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://vitrineturbo.com/kingstore" />
+    <meta name="twitter:title" content="King Store - VitrineTurbo" />
+    <meta name="twitter:description" content="Confira os melhores produtos esportivos e casual da King Store. Nike, Adidas, Puma e muito mais!" />
+    <meta name="twitter:image" content="https://exemplo.supabase.co/storage/v1/object/public/avatars/kingstore-avatar.png" />
+
+    <!-- WhatsApp Specific Optimizations -->
+    <meta property="og:image:alt" content="King Store" />
+
+    <!-- Redirect para navegadores normais (não crawlers) -->
+    <meta http-equiv="refresh" content="0;url=https://vitrineturbo.com/kingstore" />
+    <script>
+      // JavaScript redirect (só executado por navegadores reais, não por crawlers)
+      if (!/bot|crawler|spider|crawling/i.test(navigator.userAgent)) {
+        window.location.href = "https://vitrineturbo.com/kingstore";
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Inter, system-ui, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 5px solid white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+      }
+      .loading {
+        font-size: 14px;
+        opacity: 0.7;
+        margin-top: 30px;
+      }
+      .spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Avatar do corretor -->
+      <img src="https://exemplo.supabase.co/storage/v1/object/public/avatars/kingstore-avatar.png"
+           alt="King Store" />
+
+      <!-- Nome do corretor -->
+      <h1>King Store</h1>
+
+      <!-- Bio do corretor -->
+      <p>Confira os melhores produtos esportivos e casual da King Store. Nike, Adidas, Puma e muito mais!</p>
+
+      <!-- Indicador de carregamento -->
+      <div class="loading">
+        <div class="spinner"></div>
+        <div style="margin-top: 10px;">Redirecionando...</div>
+      </div>
+    </div>
+
+    <!--
+      NOTA TÉCNICA:
+
+      Este HTML é servido APENAS para crawlers/bots de redes sociais.
+
+      Usuários normais:
+      - São redirecionados imediatamente para a SPA React
+      - Através do meta refresh e JavaScript redirect
+
+      Crawlers (WhatsApp, Facebook, etc):
+      - Não executam JavaScript
+      - Leem as meta tags Open Graph
+      - Usam essa informação para gerar a prévia
+      - Não seguem o redirect
+
+      Resultado:
+      - Crawlers veem meta tags personalizadas
+      - Usuários veem a aplicação React normal
+      - Zero impacto na experiência do usuário
+    -->
+  </body>
+</html>

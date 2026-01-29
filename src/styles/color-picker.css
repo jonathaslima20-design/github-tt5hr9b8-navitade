@@ -1,0 +1,40 @@
+/* Color picker styles */
+.color-picker {
+  @apply relative inline-block;
+}
+
+.color-picker-input {
+  @apply w-12 h-12 rounded-md border border-input cursor-pointer overflow-hidden;
+}
+
+.color-picker-input::-webkit-color-swatch-wrapper {
+  @apply p-0;
+}
+
+.color-picker-input::-webkit-color-swatch {
+  @apply border-none;
+}
+
+.color-picker-input::-moz-color-swatch {
+  @apply border-none;
+}
+
+.color-picker-popover {
+  @apply absolute z-50 mt-2 p-3 bg-popover rounded-md shadow-md border;
+}
+
+.color-picker-swatches {
+  @apply grid grid-cols-8 gap-1;
+}
+
+.color-picker-swatch {
+  @apply w-6 h-6 rounded-md cursor-pointer border border-input transition-all;
+}
+
+.color-picker-swatch:hover {
+  @apply scale-110;
+}
+
+.color-picker-swatch.selected {
+  @apply ring-2 ring-ring ring-offset-2;
+}
